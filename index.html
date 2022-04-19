@@ -57,8 +57,18 @@
         <section class="section-fon">
         <div class="container hero">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="button primary-top">Заказать услугу</button>
+            <button data-modal-open type="button" class="button primary-top">Заказать услугу</button>
         </div>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close class="close">
+                        <svg class="close-icon" width="30px" height="30px">
+                            <use href="./images/sprite.svg#iconclose"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
 
         <!--Особливості-->
@@ -310,7 +320,7 @@
         </section>
 
     </main>
-
+    
     <!-- Підвал -->
     <footer class="section-footer">
         <div class="container foter">
@@ -359,6 +369,6 @@
             </div>  
             </div>
     </footer>
-      
+    <script src="/js/modal.js"></script>
 </body>
 </html>
